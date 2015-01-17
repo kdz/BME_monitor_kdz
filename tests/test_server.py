@@ -1,3 +1,8 @@
+# ### tests written for pytest
+# to run tests in Terminal with verbose output -vv (using python2):
+#    cd <project_directory>
+#    python -m pytest tests -vv
+
 from baby_server import *
 
 def test_update_with_normal_temps_causes_no_sms_or_fan_or_heat():
