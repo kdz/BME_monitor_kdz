@@ -1,0 +1,8 @@
+*env
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/misc.xml
+**/*.pyc
+.DS_Store
+**/__pycache__
+*.iml
