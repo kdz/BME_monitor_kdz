@@ -95,6 +95,7 @@ def temp_range(env_t):  # -> (min, max)
 #   - steps the curr_world to the new_world
 #   - executes those actions
 
+# make explicit web-app object (for @routes and corresponding functions)
 app = bottle.default_app()
 
 @app.route("/")
@@ -111,10 +112,7 @@ def update_temps(bt, et, t):
 @app.route('/s')
 @app.route("/stats")
 def stats():
-        return bottle.template('stats',
-                               world=curr_world._replace(
-                                   body_hist=curr_world.body_hist[0:10],
-                                   env_hist=curr_world.env_hist[0:10]))
+    return bottle.template('stats', world=curr_world)
 
 @app.route("/sms_in", ["POST", "GET"])
 def sms_in():

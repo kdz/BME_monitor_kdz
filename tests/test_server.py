@@ -42,6 +42,13 @@ def test_update_with_normal_temps_after_fan_or_heat_turns_off_heater_or_fan():
     assert w2 == World([[0, 98.3]], [[0, 30]], None, False, False)
     assert acts == [None, Action(fan, ['off'])]
 
+def test_update_with_abnormal_temps_while_awaiting_previous_sms_confirmation_does_not_resend_sms():
+    w1 = World([], [], 'heat?', False, False)
+    w2, acts = update_temp_hist(w1, 90, 30, 0)
+    assert w2 == World([[0, 90]], [[0, 30]], 'heat?', False, False)
+    assert acts == [None, None]
+
+
 def test_update_with_normal_temps_while_awaiting_previous_sms_confirmation_does_not_resend_sms():
     w1 = World([], [], 'heat?', False, False)
     w2, acts = update_temp_hist(w1, 98.4, 30, 0)
