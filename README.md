@@ -14,6 +14,6 @@ USAGE:
 - Edit ```Parent``` variable to be cell phone of "Parent" to notify, using ```+1<area-code-phone>```
 - Connect Arduino board to laptop with serial / USB cable
 - In one Terminal window, type: ```ngrok -subdomain=babymon 80```
-- In another Terminal window, type: ```python<n> baby_device.py```
-- In another Terminal window, type: ```python<n> baby_server.py``` 
+- In another Terminal window, start device with python2.7: ```python2.7 baby_device.py```
+- In another Terminal window, start server wtih python2.7: ```python2.7 baby_server.py``` 
 - System should be operational
