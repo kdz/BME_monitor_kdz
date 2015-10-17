@@ -4,7 +4,8 @@ Baby Monitor is a project done under the Columbia Engineering Showcase program. 
 
 I have designed and developed all of the software involved myself (except for ```smart_bounds_check```). I also helped design and develop the hardware with my teammates.
 
-Please see the README_babymon.pdf for an overview of the device and system. Here is a screenshot of the baby-stats page:
+See README_babymon.pdf for an overview of the device and system. Here is a screenshot of the baby-stats page:
+
 ![image](https://cloud.githubusercontent.com/assets/4351330/10556604/9b70100e-744d-11e5-98c8-4b6df53ac0ea.png)
 
 
