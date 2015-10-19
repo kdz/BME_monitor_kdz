@@ -16,7 +16,7 @@ Here is a screenshot of the baby-stats page:
 
 ## Installation and Usage
 
-`baby_server.py` runs the main server, and `baby_device.py` is designed to run on a Raspberry-Pi, connected via Serial to the Arduino. You can also run them as separate processes on a single machine as well following these steps:
+`baby_server.py` runs the main server, while `baby_device.py` is designed to run on a Raspberry-Pi, connected via Serial to the Arduino. You can also run them as separate processes on a single machine as well following these steps:
 
 - Install Python 2.7
 - Install python libs for: twilio, requests, bottle, and BreakfastSerial
